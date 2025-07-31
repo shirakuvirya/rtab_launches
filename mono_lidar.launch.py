@@ -73,7 +73,7 @@ def launch_setup(context: LaunchContext, *args, **kwargs):
 
     # RTAB-Map's internal parameters are strings:
     'Icp/PointToPlane': 'true',
-    'Icp/Iterations': '100',
+    'Icp/Iterations': '20',
     'Icp/VoxelSize': str(voxel_size_value),
     'Icp/Epsilon': '0.0001',
     'Icp/PointToPlaneK': '40',
@@ -91,7 +91,7 @@ def launch_setup(context: LaunchContext, *args, **kwargs):
     'RGBD/Enabled':         'true',
     # 'VhEp/Enabled': 'true',                         # Enable epipolar geometry visual hypothesis generation
     'Rtabmap/LoopThr': '0.03',                      
-    'Optimizer/Iterations': '100', 
+    'Optimizer/Iterations': '50', 
     'Mem/DepthAsMask': 'true',
     'Vis/DepthAsMask': 'true',
 
@@ -107,7 +107,7 @@ def launch_setup(context: LaunchContext, *args, **kwargs):
     'Vis/FeatureType': '8',                           # ORB + GFTT for visual feature extraction
     'Rtabmap/PublishStats': "true", 
     'Reg/Strategy': '2',                              # Registration through Visual ICP
-    'Optimizer/Strategy': '1',                        # Use G2O for global optimization
+    'Optimizer/Strategy': '2',                        # Use G2O for global optimization
     'RGBD/LoopClosureIdentityGuess': 'true',          # Starts registration assuming no transform between loop candidates
   }
   
