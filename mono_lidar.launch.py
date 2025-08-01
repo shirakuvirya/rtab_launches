@@ -84,7 +84,7 @@ def launch_setup(context: LaunchContext, *args, **kwargs):
     'Icp/OutlierRatio': '0.7',
     'Vis/MaxDepth': '30.0',
     'Vis/MaxFeatures': '5000',
-    'RGBD/CreateOccupancyGrid': 'false',              # Disable RGBD octomap generation
+    'RGBD/CreateOccupancyGrid': 'true',              # Disable RGBD octomap generation
     'Kp/MaxFeatures': '5000',
     'RGBD/LoopClosureReextractFeatures': 'false',
     'RGBD/LoopCovLimited': 'false',
@@ -145,7 +145,7 @@ def launch_setup(context: LaunchContext, *args, **kwargs):
     'RGBD/ProximityPathMaxNeighbors': '1',
     'RGBD/AngularUpdate': '0.05',
     'RGBD/LinearUpdate': '0.05',
-    'RGBD/CreateOccupancyGrid': 'false',
+    'RGBD/CreateOccupancyGrid': 'true',
     'Mem/NotLinkedNodesKept': 'false',
     'Mem/RecentWmRatio': '0.7',
     'Mem/STMSize': '200',
